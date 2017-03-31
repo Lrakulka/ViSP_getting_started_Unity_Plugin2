@@ -4,7 +4,7 @@ Plugin with ViSP binaries
 The project developed for the Linux systems.
 
 Requires installation of ViSP with OpenCV (recommended libraries)
-(https://visp.inria.fr/install)
+[](https://visp.inria.fr/install)
 
-Project Screenshots
-![](https://github.com/Lrakulka/ViSP_getting_started_Unity_Plugin2/tree/master/info/screenshot.png)
+Project Scres
+![](https://github.com/Lrakulka/ViSP_getting_started_Unity_Plugin2/blob/master/info/screenshot.png)
