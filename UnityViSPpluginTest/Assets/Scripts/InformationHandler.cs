@@ -9,21 +9,19 @@ public class InformationHandler : MonoBehaviour {
 	public Text pluginOutput;
 
 	private Vector3 privPosition;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {
+		// if the position of the object changed, update the information
 		if (privPosition != transform.position) {
 			privPosition = transform.position;
 			UpdateUI ();
 		}
 	}
 
+	// Updates the UI with data from ViSP
 	private void UpdateUI() {
 		cube3Dposition.text = transform.position.ToString ();
+		pluginOutput.text = ViSPpluginAdapter.GetProjection (transform.position);
 	}
 }

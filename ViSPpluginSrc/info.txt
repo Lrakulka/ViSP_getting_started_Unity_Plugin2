@@ -1,0 +1,14 @@
+// Export library
+export LD_LIBRARY_PATH=/media/set/Work/Projects/visp-gsoc-2017-enter-tasks2/ViSPpluginSrc:$LD_LIBRARY_PATH
+
+// Create shared library
+g++ -fPIC ViSPplugin.cpp -c -I.
+g++ -shared -o libViSPpluginUNIX.so ViSPplugin.o -L. -lvisp_core
+
+// Compile test binary
+g++ main.cpp -o test -I. -L. -lViSPpluginUNIX
+
+libViSPplugin depends on the libvisp_core.so.3.0
+
+
+
