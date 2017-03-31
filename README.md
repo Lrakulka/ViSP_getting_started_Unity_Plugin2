@@ -4,7 +4,7 @@ Plugin with ViSP binaries
 
 The project is developed for Linux systems.
 
-Requires installation of ViSP with recommended libraries
+Requires installation of ViSP v3.0.1 with recommended libraries
 https://visp.inria.fr/install 
 
 Screenshot of the project
